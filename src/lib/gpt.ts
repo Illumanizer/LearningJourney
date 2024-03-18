@@ -31,6 +31,7 @@ export async function strict_output(
   let error_msg: string = "";
 
   for (let i = 0; i < num_tries; i++) {
+    
     let output_format_prompt: string = `\nYou are to output ${
       list_output && "an array of objects in"
     } the following in json format: ${JSON.stringify(
